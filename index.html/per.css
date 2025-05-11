@@ -1,0 +1,284 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {}
+
+body {
+    height: 500px;
+    background-color: rgb(6, 56, 26);
+}
+
+#jum {
+    height: 990px;
+    background: url(1.png) no-repeat;
+    background-size: 100%;
+    position: center;
+}
+
+#jum H2 {
+    float: left;
+    color: red;
+    text-shadow: 2px 2PX 10PX #fff;
+    font-size: 28pt;
+    font-family: Calibri;
+    top: 20PX;
+    position: absolute;
+    right: 30PX;
+    top: 220PX;
+    text-align: center;
+}
+
+#ABOU .img {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+
+marquee {
+    color: rgb(206, 11, 43);
+    text-align: center;
+    font-size: 44px;
+    height: 600PX;
+    width: 1050PX;
+    position: absolute;
+    top: 400PX;
+    left: 210PX;
+}
+
+
+.HOM {
+    background: #0ce41e(0, 100, 0);
+    text-align: right;
+}
+
+.HOM ul {
+    display: inline-flex;
+    list-style: none;
+    color: rgb(245, 239, 245);
+}
+
+.HOM ul li {
+    width: 130PX;
+    margin: 15PX;
+    padding: 10PX;
+    font-size: 18PX;
+
+}
+
+.HOM ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.activ,
+.HOM ul li:hover {
+    background: #2bab0d;
+    border-radius: 3PX;
+
+}
+
+.HOM h2 {
+    text-align: left;
+    padding-right: 10px;
+}
+
+.HOM ul li :hover .menu1 ul {
+    display: block;
+    margin: 10PX;
+
+}
+
+article {
+    overflow: hidden;
+    margin-bottom: 10PX;
+    border: 1PX solid rgb(20, 211, 93);
+    background-color: darkslateblue;
+}
+
+article h2 {
+    color: gold;
+    border-bottom: 2PX dotted;
+    font-size: 28PX;
+    margin-bottom: 10PX;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+article p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    float: left;
+    width: 70%;
+    text-align: justify;
+    text-align: right;
+    color: white;
+}
+
+article img {
+    float: right;
+    background-color: white;
+    border: 2px solid#ccc;
+    padding: 5px;
+    width: 200PX;
+    height: 200PX;
+}
+
+article.rid {
+    float: right;
+    margin-right: 20PX;
+    background-color: white;
+    border: 2px solid black;
+    padding: 7PX;
+    margin-top: 5px;
+    text-align: center;
+    top: 1PX;
+}
+
+.TEXT {
+    color: white;
+    width: 100%;
+    line-height: 75px;
+    font-size: 24px;
+    font-family: Calibri;
+    margin-left: 50PX;
+    letter-spacing: 1px;
+    position: absolute;
+    margin-top: 10px;
+
+
+}
+
+.TEXT h5 {
+    font-size: 18PX;
+    color: aqua;
+    letter-spacing: 2px;
+    position: center;
+    margin-left: 5PX;
+
+}
+
+span {
+    color: red;
+}
+
+#contact {
+    text-align: center;
+    width: 1000PX;
+    padding-top: 100px;
+    margin-top: 20px;
+    margin-left: 200PX;
+    color: antiquewhite;
+    top: 30PX;
+    overflow: hidden;
+
+
+}
+
+#contact ul {
+    list-style-type: none;
+    overflow: hidden;
+
+}
+
+#contact ul li {
+    float: left;
+
+    border: 1PX solid#ccc;
+    height: 200PX;
+    padding-top: 100PX;
+    overflow: hidden;
+    width: 300PX;
+    margin-right: 30PX;
+    color: black;
+
+}
+
+#contact #img {
+    background: url(9.png)no-repeat top center;
+    background-size: 100PX 100PX;
+    background-color: azure;
+}
+
+#contact #img2 {
+    background: url(t.png)no-repeat top center;
+    background-size: 100PX 100PX;
+    background-color: azure;
+}
+
+/* From Uiverse.io by mrhyddenn */
+.loader {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.55);
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.loader::before {
+    content: '';
+    position: absolute;
+    inset: 20px;
+    background: transparent;
+    border: 1px dashed#444;
+    border-radius: 50%;
+    box-shadow: inset -5px -5px 25px rgba(0, 0, 0, 0.25), inset 5px 5px 35px rgba(0, 0, 0, 0.25);
+}
+
+.loader::after {
+    right: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px dashed#444;
+    box-shadow: inset -5px -5px 25px rgba(0, 0, 0, 0.25), inset 5px 5px 35px rgba(0, 0, 0, 0.25);
+}
+
+.loader span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    transform-origin: top left;
+    animation: radar81 2s linear infinite;
+    border-top: 1px dashed #fff;
+}
+
+.loader span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(16, 184, 214);
+    transform-origin: top left;
+    transform: rotate(-55deg);
+    filter: blur(30px) drop-shadow(20px 20px 20px rgb(8, 140, 216));
+}
+
+@keyframes radar81 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
